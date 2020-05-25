@@ -1,0 +1,36 @@
+        <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-lg">
+          <a class="navbar-brand" href="{% url 'home'%}">
+            <img src="{% static 'djangoTCT/icons/taiji50x50.png' %}" width="50" height="50" class="d-inline-block align-top" alt="">
+            {% include "includes/_brandname.html" %}
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                  aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          {% if user.is_authenticated %}
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  {{ user.username }}
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">My Feed</a>
+                  {% if user.is_staff %}
+                  <a class="dropdown-item" href="{% url 'admin:index' %}">Admin</a>
+                  {% endif %}
+                  <a class="dropdown-item" href="{% url 'social:disconnect' 'google-oauth2' %}">Logout</a>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+          {% else %}
+              <a class="btn btn-primary" href="{% url 'social:begin' 'google-oauth2' %}">
+              login
+              </a>
+          {% endif %}
+
+        </nav>

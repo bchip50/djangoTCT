@@ -1,0 +1,11 @@
+<iframe src="https://calendar.google.com/calendar/embed?src=6pmo8fuqgsfa2c81kvbbgnkid8%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+Secret
+iCal Link: https://calendar.google.com/calendar/ical/6pmo8fuqgsfa2c81kvbbgnkid8%40group.calendar.google.com/private-cc9be8ed832ec344b673e5b7fa35b17e/basic.ics
+
+Public:
+<iframe src="https://calendar.google.com/calendar/embed?src=6pmo8fuqgsfa2c81kvbbgnkid8%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+https://calendar.google.com/calendar/ical/6pmo8fuqgsfa2c81kvbbgnkid8%40group.calendar.google.com/public/basic.ics
+
+

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block pre_content %}
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h2 class="display-3">Welcome to Tai Chi Tarrant!</h2>
+    <p class="lead">A central site for all things Tai Chi in Tarrant County, Texas.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="{% url "social:begin" "google-oauth2" %}" role="button">Google+</a>
+      <a class="btn btn-primary btn-lg" href="{% url "social:begin" "model-backend" %}" role="button">ID / Password</a>
+    </p>
+  </div>
+</div>
+{% endblock %}
