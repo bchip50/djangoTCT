@@ -7,7 +7,11 @@ __pycache__/
 # C extensions
 *.so
 
+db.sqlite3
+manage.py
+sample google calendar.txt
 # Distribution / packaging
+.idea
 .Python
 build/
 develop-eggs/
@@ -195,7 +199,3 @@ tct/media/
 
 .pytest_cache/
 
-
-
-
-/static/djangoTCT/icons/icons8-camera-50.png
